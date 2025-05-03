@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Dog Breeds</h2>
+    <ul>
+        {% for breed in breeds %}
+            <li>
+                <a href="/breeds/{{ breed.id }}">{{ breed.attributes.name }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
+

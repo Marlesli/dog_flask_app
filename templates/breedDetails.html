@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>{{ breed.attributes.name }}</h2>
+    <p><strong>Description:</strong> {{ breed.attributes.description }}</p>
+
+    <p><strong>Life Span:</strong> 
+        {{ breed.attributes.life.min }} - {{ breed.attributes.life.max }} years
+    </p>
+
+    <p><strong>Male Weight:</strong> 
+        {{ breed.attributes.male_weight.min }} - {{ breed.attributes.male_weight.max }} kg
+    </p>
+
+    <p><strong>Female Weight:</strong> 
+        {{ breed.attributes.female_weight.min }} - {{ breed.attributes.female_weight.max }} kg
+    </p>
+
+{% endblock %}
+
+
